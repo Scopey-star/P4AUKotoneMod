@@ -1861,7 +1861,7 @@ def NmlAtk5B():
         Unknown1082(12)
         Unknown1371(1)
         Unknown1344(-2)
-        Unknown1341(4)
+        Unknown1341(2) # Was 4 bonus frames of air hitstun which allowed ABSURDLY high proration combos, adjusting it lower now
         HitOrBlockCancel('NmlAtk2B')
         HitOrBlockCancel('NmlAtk5C')
         HitOrBlockCancel('NmlAtk2C')
@@ -3384,31 +3384,16 @@ def GlaiveRushB():
     Unknown187(0)
     Unknown740(0, 1, 1)
     sprite('nb403_00', 1)
-    #if CheckInput(0xa): # Held version is temporarily disabled because it's still inconsistent.
-    #    SLOT_47 = (SLOT_47 + 1)
+    Unknown398(1)
     sprite('nb403_00', 1)
-    #if CheckInput(0xa):
-    #    SLOT_47 = (SLOT_47 + 1)
     sprite('nb403_00', 1)
-    #if CheckInput(0xa):
-    #    SLOT_47 = (SLOT_47 + 1)
-    # Glaive rush still doesn't feel consistent, maybe instead just check if they hold B for up to 3 frames during startup and THEN boost height
-    #if (SLOT_47 >= 3):
-    #    SLOT_54 = 1
-    #    Unknown116(18000)
-    #    Unknown123(32000)
-    #    Unknown138(350)
-    #else:
     Unknown116(28000)
     Unknown123(24000)
     SFX_0('highjump_m')
     sprite('nb403_01', 1)
     sprite('nb403_01', 2)
     Unknown138(2000)
-    #if (SLOT_54 == 1):
-    #    Unknown138(1800)
     sprite('nb403_01', 1)
-    Unknown398(1)
     sprite('nb403_01', 1)
     sprite('nb250_00', 3)
     sprite('nb250_00', 1)
@@ -3420,12 +3405,6 @@ def GlaiveRushB():
     #Unknown1674(1) # Allows canceling into double jump
     label(0)
     sprite('nb250_05', 2)
-    # Drift mechanics not yet implemented
-    #if (SLOT_54 == 1):
-    #    if CheckInput(0x5e):
-    #        Unknown116(-9000)
-    #    if CheckInput(0x78):
-    #        Unknown116(15000)
     sendToLabel(0)
 
 @State
