@@ -5175,6 +5175,8 @@ def nbef_430Shougekiha():
         Unknown549(2)
         Unknown402()
         Unknown2341(1)
+        # New size functions
+        Unknown109(30000)
 
         def upon_22():
             Unknown116(70000)
@@ -5195,10 +5197,81 @@ def nbef_430Shougekiha():
             Unknown116(150000)
             Unknown440(5)
             Unknown1392('nbef_430ShougekihaCD')
-    sprite('vr_nb430_00', 1)
+    GFX_0('433ringA', 100)
+    sprite('vr_lp433_01atkcol', 1)
     Unknown254()
     GFX_0('nbef_430Shougekiha_add', 100)
-    sprite('vr_nb430_00', 20)
+    sprite('vr_lp433_01atkcol', 20)
+
+@State
+def __433ringA():
+
+    def upon_IMMEDIATE():
+        Unknown2478(1)
+        Unknown491('laef_433ringA.DIG', '')
+        Unknown401()
+        Unknown199(1400)
+        Unknown109(30000)
+        Unknown370(0)
+        Unknown116(70000) # Velocity Matches
+    sprite('null', 20)
+    #GFX_0('433floorA', 100)
+    Unknown373(30)
+    #SFX_3('la002')
+    sprite('null', 10)
+    SFX_0('chain_snap')
+    sprite('null', 10)
+    SFX_0('chain_move')
+    sprite('null', 10)
+    SFX_0('chain_snap')
+    sprite('null', 10)
+    SFX_0('chain_move')
+    sprite('null', 10)
+    SFX_0('chain_snap')
+    sprite('null', 10)
+    SFX_0('chain_move')
+    sprite('null', 15)
+    Unknown373(-17)
+
+@State
+def vr_lp433_01atk():
+
+    def upon_IMMEDIATE():
+        Unknown267()
+        AttackLevel_(4)
+        Damage(130)
+        Unknown1130(1000)
+        Unknown1236(1)
+        Unknown998(10000)
+        AirPushbackX(3000)
+        AirPushbackY(5000)
+        Unknown1058(10)
+        Unknown1371(1)
+        Unknown1306(1)
+        Unknown1392('Oraora')
+        Unknown2655(2)
+        Unknown1122(1)
+        if (SLOT_6 == 2):
+            Unknown105(260000)
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown2486(1)
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown254()
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown254()
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown254()
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown254()
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown254()
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown254()
+    sprite('vr_lp433_01atkcol', 10)
+    Unknown254()
+    sprite('vr_lp433_01atkcol', 5)
+    Unknown254()
+    loopRest()
 
 @State
 def nbef_430Shougekiha_black():
