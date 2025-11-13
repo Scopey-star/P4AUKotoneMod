@@ -2812,18 +2812,10 @@ def jf_Persona236C():
         callSubroutine('PersonaKenseiMuteki')
         Unknown265()
         Unknown549(0)
-        AttackLevel_(4)
-        Damage(900)
-        Unknown1142(200)
-        Unknown1341(4)
-        Unknown1371(1)
         Unknown2757()
         Unknown597(27, 6)
         Unknown2760(3, 100, -100000, 0)
         Unknown2763(0, 0, 0, 0)
-        Unknown2764(0, 0)
-        Unknown273(1)
-        Unknown278(1)
         Unknown2764(0, 0)
         Unknown273(1)
         Unknown278(1)
@@ -2857,7 +2849,7 @@ def npef_256_ice():
 
     def upon_IMMEDIATE():
         Unknown265()
-        AttackLevel_(2)
+        AttackLevel_(3)
         Damage(600)
         Unknown1130(100)
         Unknown1142(600)
@@ -2871,6 +2863,7 @@ def npef_256_ice():
         Unknown105(250000) # Horizontal Displacement
         Unknown1070(0)
         Unknown1361(60, 1, 0) # Freeze frames
+        Unknown998(-12000) # Ground Pushback on block
         Unknown1379(1)
         Unknown1351(5)
         Unknown1372(1)

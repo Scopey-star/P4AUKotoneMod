@@ -1815,6 +1815,7 @@ def NmlAtk2A():
         Damage(200)
         Unknown1142(500)
         Unknown1341(3)
+        Unknown1273(2)
         AirPushbackY(10000)
         HitOrBlockCancel('NmlAtk5A')
         HitOrBlockCancel('NmlAtk2A')
